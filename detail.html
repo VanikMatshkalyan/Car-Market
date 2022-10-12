@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About cars</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="simple">
+          <li class="logo_area">
+            <img src="./images/logo-fococlipping-standard.png" alt="" />
+            <p>YU-ARTMOTORS</p>
+          </li>
+        </div>
+        <div class="navigation">
+          <div class="about menu-list">
+            <li>
+              <a href="./home.html">Home</a>
+            </li>
+            <li>
+              <a href="./cars.html">Cars</a>
+            </li>
+            <li>
+              <a href="./Services-area.html">Services</a>
+            </li>
+            <li>
+              <a href="./details-list.html">Details</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li onclick="handleLanguagesDropdownOpen()">
+              <div class="dropdown">
+                <button><i class="fa fa-globe fa-lg" aria-hidden="true"></i></button>
+                <div class="options">
+                  <div><img src="./flags/am-flag.jpg" alt="ARM"></div>
+                  <div><img src="./flags/Flag_of_Russia.png" alt="RUS"></div>
+                  <div><img src="./flags/2560px-Flag_of_the_United_States.svg.png" alt="USE"></div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="hamburger-logo" onclick="headerOpenHandler()">
+            <div class="menu-icon">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="about-cars">
+    <div class="image-gallery">
+      <div id="big">
+        <img src="./cars/BMW-1.jpg">
+      </div>
+      <div id="sub">
+          <img src="./cars/x5-1.jpg">
+          <img src="./cars/x5-2.jpg">
+          <img src="./cars/x5-3.jpg">
+          <img src="./cars/x5-4.jpg">
+          <img src="./cars/x5-1.jpg">
+      </div>
+    </div>
+    <div class="about-car">
+      <div class="car-mil">
+        <p class="title">Mileage :</p>
+        <p class="desc">125000 km</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Version :</p>
+        <p class="desc">BMW X5</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Price :</p>
+        <p class="desc">15000$</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Hand Drive :</p>
+        <p class="desc">Left</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Year :</p>
+        <p class="desc">2016</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Engine :</p>
+        <p class="desc">Gasoline</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Color :</p>
+        <p class="desc">Black</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Gearbox :</p>
+        <p class="desc">Automatic</p>
+      </div>
+      <div class="car-mil">
+        <p class="title">Description :</p>
+        <div class="desc-area">
+          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus perferendis illo aut
+            adipisci et<span id="dots">...</span><span id="more">, culpa deleniti suscipit dolore nulla itaque
+              animi
+              autem? Repudiandae illum aspernatur
+              quisquam soluta modi repellat at.</span></p>
+          <a onclick="myFunction()" id="myBtn">Read more</a>
+        </div>
+      </div>
+      <div><a href="./cars.html"><button><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to cars</button></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-wrapper">
+      <h1>Information</h1>
+      <div class="info-area">
+        <p>Location Armenia jrvej some/address.</p>
+        <p>
+          <a href="#"><img src="./phone.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./viber-logo.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./whatsapp.png" alt="" />+37499583030.</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <h1>Information</h1>
+      <div class="info-area">
+        <p>Location Armenia jrvej some/address.</p>
+        <p>
+          <a href="#"><img src="./phone.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./viber-logo.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./whatsapp.png" alt="" />+37499583030.</a>
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="./images/logo-fococlipping-standard.png" alt="" />
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

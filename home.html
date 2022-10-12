@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="simple">
+          <li class="logo_area">
+            <img src="./images/logo-fococlipping-standard.png" alt="" />
+            <p class="title">YU</p>
+            <p class="desc"><b>-ARTMOTORS</b></p>
+          </li>
+        </div>
+        <div class="navigation">
+          <div class="about menu-list">
+            <li>
+              <a href="./home.html">Home</a>
+            </li>
+            <li>
+              <a href="./cars.html">Cars</a>
+            </li>
+            <li>
+              <a href="./Services-area.html">Services</a>
+            </li>
+            <li>
+              <a href="./details-list.html">Details</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li onclick="handleLanguagesDropdownOpen()">
+              <div class="dropdown">
+                <button><i class="fa fa-globe fa-lg" aria-hidden="true"></i></button>
+                <div class="options">
+                  <div><img src="./flags/am-flag.jpg" alt="ARM"></div>
+                  <div><img src="./flags/Flag_of_Russia.png" alt="RUS"></div>
+                  <div><img src="./flags/2560px-Flag_of_the_United_States.svg.png" alt="USE"></div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="hamburger-logo" onclick="headerOpenHandler()">
+            <div class="menu-icon">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper-area-1">
+    <section class="carousel">
+      <div class="slides-container">
+        <div class="slide">
+          <div class="img-area">
+            <img class="mySlides" src="./images/1.jpg" />
+          </div>
+          <div class="text-area">
+            <div class="desc">Car Selling</div>
+            <div class="list-area">
+              <div class="title">
+                We are currently working on different type of machine sector. <br />
+                We can offer you most different type of cars especialy from Japan.
+              </div>
+              <a href="#">See list</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-area">
+            <img class="mySlides" src="./images/2.jpg" />
+          </div>
+          <div class="text-area">
+            <div class="desc">Car Details</div>
+            <div class="list-area">
+              <div class="title">
+                We have most wild car details in Armenia includings brands like <br />
+                Mercedes, BMV, Audi, Mitsubishi etc.
+              </div>
+              <a href="#">See list</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-area">
+            <img class="mySlides" src="./images/3.jpg" />
+          </div>
+          <div class="text-area">
+            <div class="desc">Car Cleaning</div>
+            <div class="list-area">
+              <div class="title">
+                We all sort of cleaning technologies to give you almost new car.
+              </div>
+              <a href="#">See list</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-area">
+            <img class="mySlides" src="./images/4.jpg" />
+          </div>
+          <div class="text-area">
+            <div class="desc">Changing Steering Wheel</div>
+            <div class="list-area">
+              <div class="title">
+                We are the best in Armenia by changing Steering wheels. We have a
+                big <br />experience of Nissan, Mitsubishi.
+              </div>
+              <a href="#">See list</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-area">
+            <img class="mySlides" src="./images/5.jpg" />
+          </div>
+          <div class="text-area">
+            <div class="desc">Supercar</div>
+            <div class="list-area">
+              <div class="title">
+                Together we will make your car a monster
+              </div>
+              <a href="#">See list</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="prev-btn" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="next-btn" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </section>
+    <section class="about-us">
+      <p class="title">About our company</p>
+      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus vel fugit laboriosam
+        sunt nisi
+        nulla ut est velit? Dignissimos ut architecto consequuntur quidem cumque esse voluptas ipsum repudiandae
+        explicabo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus vel fugit laboriosam sunt
+        nisi
+        <span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          delectus vel fugit laboriosam
+          sunt nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus vel fugit laboriosam
+          sunt nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus vel fugit laboriosam
+          sunt nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus vel fugit laboriosam
+          sunt nisi</span>
+      </p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+    </section>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <h1>Information</h1>
+      <div class="info-area">
+        <p>Location Armenia jrvej some/address.</p>
+        <p>
+          <a href="#"><img src="./phone.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./viber-logo.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./whatsapp.png" alt="" />+37499583030.</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <h1>Information</h1>
+      <div class="info-area">
+        <p>Location Armenia jrvej some/address.</p>
+        <p>
+          <a href="#"><img src="./phone.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./viber-logo.png" alt="" />+37499583030.</a>
+        </p>
+        <p>
+          <a href="#"><img src="./whatsapp.png" alt="" />+37499583030.</a>
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="./images/logo-fococlipping-standard.png" alt="" />
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
